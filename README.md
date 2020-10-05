@@ -22,3 +22,15 @@ def bubble_sort():
     if not sorted:
       return tab
 ```
+## Selection sort
+``` python
+def bubble_sort():
+  while True:
+    sorted = False
+    for x in range(len(tab)-1):
+      if tab[x] < tab[x+1]:
+        sorted=True
+        swap(x,x+1,tab)
+    if not sorted:
+      return tab
+```
