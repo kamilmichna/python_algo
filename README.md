@@ -32,3 +32,15 @@ def selectionSort():
         swap(x,j,tab)
   return tab
 ```
+## Insertion sort
+``` python
+def insertion_sort(tab):
+  for i in range(1,len(tab)):
+    # sprawdzanie podzbioru ulozonego
+    for j in range(len(tab[0:i])):
+      if tab[j] > tab[i]:
+        temp = tab[i]
+        tab.pop(i)
+        tab.insert(j,temp)
+  return tab
+```
